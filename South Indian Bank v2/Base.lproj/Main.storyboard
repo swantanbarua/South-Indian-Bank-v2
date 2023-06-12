@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Scan-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="South_Indian_Bank_v2" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,13 +20,45 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7NY-P2-ung"/>
+                    <tabBarItem key="tabBarItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="7NY-P2-ung"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="728" y="-181"/>
         </scene>
-        <!--Item 2-->
+        <!--Recharge & Pay Bills-->
+        <scene sceneID="NUc-ax-ABK">
+            <objects>
+                <viewController id="Xk5-C0-LRa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oV5-9h-fH5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rn5-xo-V3R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recharge &amp; Pay Bills" image="Recharge &amp; Pay Bills" id="vbL-RA-paz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s51-qT-2yj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1487" y="-138"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="xlL-xD-Qs3">
+            <objects>
+                <viewController id="vOC-LZ-Lb1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tI2-Eb-V5T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hVL-fg-wc1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Menu" image="menucard" catalog="system" id="30m-2F-yZm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRw-ts-8K5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="478"/>
+        </scene>
+        <!--Fund Transfer-->
         <scene sceneID="U4f-Hc-pit">
             <objects>
                 <viewController id="z3c-sn-P1i" sceneMemberID="viewController">
@@ -36,7 +68,7 @@
                         <viewLayoutGuide key="safeArea" id="0eu-KZ-cNF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="A7z-xb-Ebb"/>
+                    <tabBarItem key="tabBarItem" title="Fund Transfer" image="Fund Transfer" id="A7z-xb-Ebb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bnl-FA-bZT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1689,11 +1721,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <color key="selectedImageTintColor" systemColor="systemRedColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="agC-4E-kCQ" kind="relationship" relationship="viewControllers" id="S7X-IQ-8Qs"/>
                         <segue destination="z3c-sn-P1i" kind="relationship" relationship="viewControllers" id="lIN-wd-Pgo"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zKG-4E-cFt"/>
+                        <segue destination="Xk5-C0-LRa" kind="relationship" relationship="viewControllers" id="Zks-xE-Cyj"/>
+                        <segue destination="vOC-LZ-Lb1" kind="relationship" relationship="viewControllers" id="1Hq-6x-Xhv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPG-fu-Itv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1715,12 +1751,14 @@
         <image name="Deposits" width="100" height="100"/>
         <image name="Electricity" width="75" height="75"/>
         <image name="FAQs" width="90" height="90"/>
+        <image name="Fund Transfer" width="30" height="30"/>
         <image name="Loans" width="90" height="90"/>
         <image name="Locker Availability" width="96" height="96"/>
         <image name="Mobile" width="75" height="75"/>
         <image name="Mutual Funds" width="90" height="90"/>
         <image name="Offerings" width="70" height="70"/>
         <image name="Online Payment" width="70" height="70"/>
+        <image name="Recharge &amp; Pay Bills" width="24" height="24"/>
         <image name="Remit Money Abroad" width="24" height="24"/>
         <image name="SIB Fastag" width="60" height="60"/>
         <image name="Transactions" width="90" height="90"/>
@@ -1731,7 +1769,9 @@
         <image name="e-Lock" width="50" height="50"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="menucard" catalog="system" width="108" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

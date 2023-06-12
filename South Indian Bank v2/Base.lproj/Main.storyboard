@@ -193,34 +193,34 @@
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j6m-et-TcT">
                                                 <rect key="frame" x="0.0" y="0.0" width="410" height="257.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hYI-eC-aSE">
-                                                    <size key="itemSize" width="405" height="239"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hYI-eC-aSE">
+                                                    <size key="itemSize" width="380" height="214"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="fLH-bC-wa9" customClass="HomeCollectionViewCell" customModule="South_Indian_Bank_v2">
-                                                        <rect key="frame" x="0.0" y="9.5" width="405" height="239"/>
+                                                        <rect key="frame" x="0.0" y="22" width="380" height="214"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x2e-nf-4t3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="405" height="239"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="380" height="214"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rM5-PT-fEb" userLabel="Card Top View">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="405" height="143.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="380" height="128.5"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ave-1o-DMc" userLabel="Card Top Left View">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="243" height="143.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="228" height="128.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWANTAN BARUA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3i-6U-1Iw">
-                                                                                    <rect key="frame" x="8" y="8" width="227" height="71.5"/>
+                                                                                    <rect key="frame" x="8" y="8" width="212" height="64"/>
                                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0827 0530 0000 1380" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vi-yO-RZj">
-                                                                                    <rect key="frame" x="8" y="87.5" width="227" height="48"/>
+                                                                                    <rect key="frame" x="8" y="80" width="212" height="40.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -239,30 +239,48 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otg-Is-QlD" userLabel="Card Top Right View">
-                                                                            <rect key="frame" x="243" y="0.0" width="162" height="143.5"/>
+                                                                            <rect key="frame" x="228" y="0.0" width="152" height="128.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZB-vh-Iae">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="162" height="71.5"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="152" height="64"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 5000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGn-L8-Ray">
-                                                                                    <rect key="frame" x="0.0" y="71.5" width="162" height="72"/>
+                                                                                    <rect key="frame" x="0.0" y="64" width="152" height="64.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foR-yu-DSU">
+                                                                                    <rect key="frame" x="16" y="16" width="120" height="96.5"/>
+                                                                                    <state key="normal" title="Button"/>
+                                                                                    <buttonConfiguration key="configuration" style="plain" title="View Balance">
+                                                                                        <backgroundConfiguration key="background">
+                                                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                                                        </backgroundConfiguration>
+                                                                                        <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                                                        <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                                                    </buttonConfiguration>
+                                                                                    <connections>
+                                                                                        <action selector="viewBal:" destination="fLH-bC-wa9" eventType="touchUpInside" id="uvZ-mr-rFe"/>
+                                                                                    </connections>
+                                                                                </button>
                                                                             </subviews>
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="bottom" secondItem="oGn-L8-Ray" secondAttribute="bottom" id="0Np-eD-CfH"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="pZB-vh-Iae" secondAttribute="trailing" id="4AE-pI-kQz"/>
+                                                                                <constraint firstItem="foR-yu-DSU" firstAttribute="top" secondItem="otg-Is-QlD" secondAttribute="top" constant="16" id="6cQ-D3-bVT"/>
                                                                                 <constraint firstItem="pZB-vh-Iae" firstAttribute="top" secondItem="otg-Is-QlD" secondAttribute="top" id="9u2-8c-bfn"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="foR-yu-DSU" secondAttribute="trailing" constant="16" id="Le2-gf-lQ8"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="foR-yu-DSU" secondAttribute="bottom" constant="16" id="OKj-IV-3Ya"/>
                                                                                 <constraint firstItem="pZB-vh-Iae" firstAttribute="height" secondItem="otg-Is-QlD" secondAttribute="height" multiplier="0.5" id="Uhl-TY-dbm"/>
                                                                                 <constraint firstItem="pZB-vh-Iae" firstAttribute="leading" secondItem="otg-Is-QlD" secondAttribute="leading" id="VNC-bn-tox"/>
                                                                                 <constraint firstItem="oGn-L8-Ray" firstAttribute="top" secondItem="pZB-vh-Iae" secondAttribute="bottom" id="Xxg-4r-r2n"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="oGn-L8-Ray" secondAttribute="trailing" id="aQJ-xt-UGv"/>
+                                                                                <constraint firstItem="foR-yu-DSU" firstAttribute="leading" secondItem="otg-Is-QlD" secondAttribute="leading" constant="16" id="cLZ-rg-khV"/>
                                                                                 <constraint firstItem="oGn-L8-Ray" firstAttribute="leading" secondItem="otg-Is-QlD" secondAttribute="leading" id="oG4-ue-vOr"/>
                                                                             </constraints>
                                                                         </view>
@@ -280,10 +298,10 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rh6-TZ-t1O" userLabel="Card Bottom View">
-                                                                    <rect key="frame" x="0.0" y="143.5" width="405" height="95.5"/>
+                                                                    <rect key="frame" x="0.0" y="128.5" width="380" height="85.5"/>
                                                                     <subviews>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xJ-o4-oWt">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="182.5" height="95.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="85.5"/>
                                                                             <state key="normal" title="Button"/>
                                                                             <buttonConfiguration key="configuration" style="plain" title="e-Lock">
                                                                                 <backgroundConfiguration key="background">
@@ -294,7 +312,7 @@
                                                                             </buttonConfiguration>
                                                                         </button>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjo-QN-LFt">
-                                                                            <rect key="frame" x="182.5" y="0.0" width="222.5" height="95.5"/>
+                                                                            <rect key="frame" x="171" y="0.0" width="209" height="85.5"/>
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </view>
                                                                     </subviews>
@@ -323,7 +341,15 @@
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <color key="backgroundColor" systemColor="systemRedColor"/>
-                                                        <size key="customSize" width="405" height="239"/>
+                                                        <size key="customSize" width="380" height="214"/>
+                                                        <connections>
+                                                            <outlet property="elockbtn" destination="3xJ-o4-oWt" id="WEa-ER-zxm"/>
+                                                            <outlet property="lblacname" destination="U3i-6U-1Iw" id="EYX-iL-D9s"/>
+                                                            <outlet property="lblacno" destination="1Vi-yO-RZj" id="8Hx-XZ-x8P"/>
+                                                            <outlet property="lblbal" destination="oGn-L8-Ray" id="u0g-Zp-hvP"/>
+                                                            <outlet property="lblbalhdr" destination="pZB-vh-Iae" id="7US-ZD-oTg"/>
+                                                            <outlet property="viewbalbtn" destination="foR-yu-DSU" id="KDa-Sw-PrG"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -1714,6 +1740,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

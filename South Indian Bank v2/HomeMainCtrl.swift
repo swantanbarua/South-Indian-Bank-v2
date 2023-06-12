@@ -26,6 +26,7 @@ class HomeMainCtrl: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        homeCollectionView.reloadData()
     }
     
     @IBAction func calKYC(_ sender: UIButton) {
@@ -99,6 +100,13 @@ extension HomeMainCtrl: UICollectionViewDelegate, UICollectionViewDataSource, UI
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = homeCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
+        cell.viewbalbtn.isHidden = false
+        cell.lblbalhdr.isHidden = true
+        cell.lblbal.isHidden = true
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: 130)
     }
 }

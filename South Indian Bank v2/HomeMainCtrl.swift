@@ -9,7 +9,7 @@ import UIKit
 
 class HomeMainCtrl: UIViewController {
     
-    @IBOutlet weak var cardCollectionView: UICollectionView!
+    @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var imgprofile: UIImageView!
     @IBOutlet weak var btnnotif: UIButton!
     @IBOutlet weak var btnsearch: UIButton!
@@ -20,8 +20,8 @@ class HomeMainCtrl: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        cardCollectionView.delegate = self
-//        cardCollectionView.dataSource = self
+        homeCollectionView.delegate = self
+        homeCollectionView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -98,7 +98,7 @@ extension HomeMainCtrl: UICollectionViewDelegate, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = cardCollectionView.dequeueReusableCell(withReuseIdentifier: "CardCollectionViewCell", for: indexPath) as! CardCollectionViewCell
+        let cell = homeCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
         return cell
     }
 }

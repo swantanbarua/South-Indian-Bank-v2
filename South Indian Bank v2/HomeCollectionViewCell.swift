@@ -23,7 +23,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         lblbal.isHidden = true
     }
     
-    @IBAction func viewBal(_ sender: UIButton) {
+    @IBAction func showbalaance(_ sender: UIButton) {
         viewbalbtn.isHidden = true
         lblbalhdr.isHidden = false
         lblbal.isHidden = false

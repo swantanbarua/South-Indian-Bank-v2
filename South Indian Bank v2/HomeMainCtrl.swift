@@ -106,6 +106,12 @@ extension HomeMainCtrl: UICollectionViewDelegate, UICollectionViewDataSource, UI
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "MiniStatementCtrl") as! MiniStatementCtrl
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: false)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 130)
     }

@@ -16,6 +16,8 @@
 		11DCB1702A32E78F0044F162 /* HomeMainCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB16F2A32E78F0044F162 /* HomeMainCtrl.swift */; };
 		11DCB1742A3332BD0044F162 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB1732A3332BC0044F162 /* HomeCollectionViewCell.swift */; };
 		11DCB1EB2A3848730044F162 /* MiniStatementCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB1EA2A3848730044F162 /* MiniStatementCtrl.swift */; };
+		11DCB20E2A388F310044F162 /* MiniStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB20C2A388F310044F162 /* MiniStatementTableViewCell.swift */; };
+		11DCB20F2A388F310044F162 /* MiniStatementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DCB20D2A388F310044F162 /* MiniStatementTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		11DCB16F2A32E78F0044F162 /* HomeMainCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainCtrl.swift; sourceTree = "<group>"; };
 		11DCB1732A3332BC0044F162 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		11DCB1EA2A3848730044F162 /* MiniStatementCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStatementCtrl.swift; sourceTree = "<group>"; };
+		11DCB20C2A388F310044F162 /* MiniStatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStatementTableViewCell.swift; sourceTree = "<group>"; };
+		11DCB20D2A388F310044F162 /* MiniStatementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniStatementTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				11DCB15D2A32E5370044F162 /* SceneDelegate.swift */,
 				11DCB15F2A32E5370044F162 /* ViewController.swift */,
 				11DCB1612A32E5370044F162 /* Main.storyboard */,
+				11DCB20C2A388F310044F162 /* MiniStatementTableViewCell.swift */,
+				11DCB20D2A388F310044F162 /* MiniStatementTableViewCell.xib */,
 				11DCB1EA2A3848730044F162 /* MiniStatementCtrl.swift */,
 				11DCB1732A3332BC0044F162 /* HomeCollectionViewCell.swift */,
 				11DCB16F2A32E78F0044F162 /* HomeMainCtrl.swift */,
@@ -134,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DCB20F2A388F310044F162 /* MiniStatementTableViewCell.xib in Resources */,
 				11DCB1682A32E5390044F162 /* LaunchScreen.storyboard in Resources */,
 				11DCB1652A32E5390044F162 /* Assets.xcassets in Resources */,
 				11DCB1632A32E5370044F162 /* Main.storyboard in Resources */,
@@ -152,6 +159,7 @@
 				11DCB15E2A32E5370044F162 /* SceneDelegate.swift in Sources */,
 				11DCB1EB2A3848730044F162 /* MiniStatementCtrl.swift in Sources */,
 				11DCB1742A3332BD0044F162 /* HomeCollectionViewCell.swift in Sources */,
+				11DCB20E2A388F310044F162 /* MiniStatementTableViewCell.swift in Sources */,
 				11DCB1702A32E78F0044F162 /* HomeMainCtrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

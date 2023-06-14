@@ -13,4 +13,10 @@ let miniStatementDetails: [String] = ["MOB/Friends/Maanvender Singh", "MOB/Frien
 
 let miniStatementSigns: [String] = ["+", "-", "-", "+", "+", "-", "-", "+", "+", "-", "-", "+"]
 let miniStatementAmounts: [Int] = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
-let accountHolderNames: [String] = ["Maanvender Singh", "Ajay Jain", "Ria Jain", "Jyoti Negi", "Swantan Barua", "Faizan Ali", "Sunny Choudhary", "Parmeet Singh", "Biswaroop Dutta", "Priyanka", "Shubham Kumar", "Maayank Verma"]
+let accountHolderNames: [String] = ["Maanvender Singh", "Ajay Jain", "Ria Jain", "Jyoti Negi", "Swantan Barua", "Faizan Ali", "Sunny Choudhary", "Parmeet Singh", "Biswaroop Dutta", "Priyanka Visioapps", "Shubham Kumar", "Maayank Verma"]
+
+let bankNames: [String] = ["SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK", "SOUTH INDIAN BANK"]
+
+let accountNumbers: [Int] = [850775424306693, 912169767754307, 427809334103807, 169956949230604, 465757520284950, 170518875933030, 183750910644829, 561001874019085, 297365989155343, 610248502872944, 339603562385361, 219530246673177]
+
+let usernames: [String] = ["Maanvender", "Ajay", "Ria", "Jyoti", "Swantan", "Faizan", "Sunny", "Parmeet", "Biswaroop", "Priyanka", "Shubham", "Maayank"]

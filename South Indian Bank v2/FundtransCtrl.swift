@@ -11,10 +11,15 @@ class FundtransCtrl: UIViewController {
 
     @IBOutlet weak var btnPayee: UIButton!
     @IBOutlet weak var fundtranscolView: UICollectionView!
+    @IBOutlet weak var tblfundtranslist: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fundtranscolView.delegate = self
         fundtranscolView.dataSource = self
+        tblfundtranslist.register(UINib(nibName: "FundTransOutwardCell", bundle: nil), forCellReuseIdentifier: "FundTransOutwardCell")
+        tblfundtranslist.delegate = self
+        tblfundtranslist.dataSource = self
     }
     
     override func viewWillLayoutSubviews() {
@@ -32,6 +37,26 @@ extension FundtransCtrl: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = fundtranscolView.dequeueReusableCell(withReuseIdentifier: "FundtranscolViewCell", for: indexPath) as! FundtranscolViewCell
+        return cell
+    }
+}
+
+extension FundtransCtrl: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return usernames.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tblfundtranslist.dequeueReusableCell(withIdentifier: "FundTransOutwardCell", for: indexPath) as! FundTransOutwardCell
+        cell.accessoryType = .none
+        cell.lblacno.text = "\(accountNumbers[indexPath.row])"
+        cell.lblacname.text = accountHolderNames[indexPath.row]
+        cell.lblbankname.text = bankNames[indexPath.row]
+        cell.lblusrname.text = usernames[indexPath.row]
         return cell
     }
 }

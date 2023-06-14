@@ -9,6 +9,12 @@ import UIKit
 
 class MiniStatementTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imgProfile: UIImageView!
+    @IBOutlet weak var lblname: UILabel!
+    @IBOutlet weak var bankname: UILabel!
+    @IBOutlet weak var actnum: UILabel!
+    @IBOutlet weak var fullname: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -16,5 +22,4 @@ class MiniStatementTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
 }

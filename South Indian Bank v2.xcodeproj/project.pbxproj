@@ -18,6 +18,10 @@
 		11DCB1EB2A3848730044F162 /* MiniStatementCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB1EA2A3848730044F162 /* MiniStatementCtrl.swift */; };
 		11DCB20E2A388F310044F162 /* MiniStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB20C2A388F310044F162 /* MiniStatementTableViewCell.swift */; };
 		11DCB20F2A388F310044F162 /* MiniStatementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DCB20D2A388F310044F162 /* MiniStatementTableViewCell.xib */; };
+		11DCB2112A3898600044F162 /* TransactionHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB2102A3898600044F162 /* TransactionHistoryVC.swift */; };
+		11DCB2132A38A0570044F162 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB2122A38A0570044F162 /* Data.swift */; };
+		11DCB2192A39A23A0044F162 /* FundtransCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB2182A39A23A0044F162 /* FundtransCtrl.swift */; };
+		11DCB21B2A39C8800044F162 /* FundtranscolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB21A2A39C8800044F162 /* FundtranscolViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		11DCB1EA2A3848730044F162 /* MiniStatementCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStatementCtrl.swift; sourceTree = "<group>"; };
 		11DCB20C2A388F310044F162 /* MiniStatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStatementTableViewCell.swift; sourceTree = "<group>"; };
 		11DCB20D2A388F310044F162 /* MiniStatementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniStatementTableViewCell.xib; sourceTree = "<group>"; };
+		11DCB2102A3898600044F162 /* TransactionHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryVC.swift; sourceTree = "<group>"; };
+		11DCB2122A38A0570044F162 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		11DCB2182A39A23A0044F162 /* FundtransCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundtransCtrl.swift; sourceTree = "<group>"; };
+		11DCB21A2A39C8800044F162 /* FundtranscolViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundtranscolViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +78,11 @@
 				11DCB15D2A32E5370044F162 /* SceneDelegate.swift */,
 				11DCB15F2A32E5370044F162 /* ViewController.swift */,
 				11DCB1612A32E5370044F162 /* Main.storyboard */,
+				11DCB2182A39A23A0044F162 /* FundtransCtrl.swift */,
+				11DCB21A2A39C8800044F162 /* FundtranscolViewCell.swift */,
+				11DCB2102A3898600044F162 /* TransactionHistoryVC.swift */,
 				11DCB20C2A388F310044F162 /* MiniStatementTableViewCell.swift */,
+				11DCB2122A38A0570044F162 /* Data.swift */,
 				11DCB20D2A388F310044F162 /* MiniStatementTableViewCell.xib */,
 				11DCB1EA2A3848730044F162 /* MiniStatementCtrl.swift */,
 				11DCB1732A3332BC0044F162 /* HomeCollectionViewCell.swift */,
@@ -154,12 +166,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DCB2192A39A23A0044F162 /* FundtransCtrl.swift in Sources */,
 				11DCB1602A32E5370044F162 /* ViewController.swift in Sources */,
 				11DCB15C2A32E5370044F162 /* AppDelegate.swift in Sources */,
 				11DCB15E2A32E5370044F162 /* SceneDelegate.swift in Sources */,
 				11DCB1EB2A3848730044F162 /* MiniStatementCtrl.swift in Sources */,
 				11DCB1742A3332BD0044F162 /* HomeCollectionViewCell.swift in Sources */,
 				11DCB20E2A388F310044F162 /* MiniStatementTableViewCell.swift in Sources */,
+				11DCB2112A3898600044F162 /* TransactionHistoryVC.swift in Sources */,
+				11DCB2132A38A0570044F162 /* Data.swift in Sources */,
+				11DCB21B2A39C8800044F162 /* FundtranscolViewCell.swift in Sources */,
 				11DCB1702A32E78F0044F162 /* HomeMainCtrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

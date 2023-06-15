@@ -27,6 +27,11 @@ class FundtransCtrl: UIViewController {
         fundTranstopTableView.dataSource = self
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        fundtranscolView.reloadData()
+//    }
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         btnaddpayee.layer.cornerRadius = 20
@@ -45,7 +50,16 @@ extension FundtransCtrl: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = fundtranscolView.dequeueReusableCell(withReuseIdentifier: "FundtranscolViewCell", for: indexPath) as! FundtranscolViewCell
+        cell.btnbalance.isHidden = false
+        cell.lblacnum_balhdr.isHidden = true
+        cell.lblacnum_bal.isHidden = true
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "MiniStatementCtrl") as! MiniStatementCtrl
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: false)
     }
 }
 

@@ -27,10 +27,10 @@ class FundtransCtrl: UIViewController {
         fundTranstopTableView.dataSource = self
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        fundtranscolView.reloadData()
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fundtranscolView.reloadData()
+    }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -55,6 +55,7 @@ extension FundtransCtrl: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.lblacnum_bal.isHidden = true
         return cell
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "MiniStatementCtrl") as! MiniStatementCtrl

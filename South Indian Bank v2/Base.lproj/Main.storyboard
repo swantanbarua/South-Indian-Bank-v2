@@ -226,22 +226,22 @@
                                                                             <rect key="frame" x="211" y="0.0" width="141" height="100"/>
                                                                             <subviews>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppb-H1-Y0Z" userLabel="View Balance View">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="70"/>
+                                                                                    <rect key="frame" x="8" y="0.0" width="133" height="70"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Balance" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTN-Tp-gfs">
-                                                                                            <rect key="frame" x="8" y="8" width="125" height="35"/>
+                                                                                            <rect key="frame" x="8" y="8" width="117" height="35"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 5000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7B-P7-KPs">
-                                                                                            <rect key="frame" x="8" y="47" width="125" height="15"/>
+                                                                                            <rect key="frame" x="8" y="47" width="117" height="15"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h14-mv-QJG">
-                                                                                            <rect key="frame" x="21" y="21" width="99.5" height="28.5"/>
+                                                                                            <rect key="frame" x="17" y="21" width="99.5" height="28.5"/>
                                                                                             <state key="normal" title="Button"/>
                                                                                             <buttonConfiguration key="configuration" style="plain" title="View Balance">
                                                                                                 <backgroundConfiguration key="background">
@@ -273,7 +273,7 @@
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="trailing" secondItem="ppb-H1-Y0Z" secondAttribute="trailing" id="4OE-h4-gZP"/>
-                                                                                <constraint firstItem="ppb-H1-Y0Z" firstAttribute="leading" secondItem="yjD-9v-dDf" secondAttribute="leading" id="AUg-YV-o3E"/>
+                                                                                <constraint firstItem="ppb-H1-Y0Z" firstAttribute="leading" secondItem="yjD-9v-dDf" secondAttribute="leading" constant="8" id="AUg-YV-o3E"/>
                                                                                 <constraint firstItem="ppb-H1-Y0Z" firstAttribute="height" secondItem="yjD-9v-dDf" secondAttribute="height" multiplier="0.7" id="BrO-nF-cRg"/>
                                                                                 <constraint firstItem="ppb-H1-Y0Z" firstAttribute="top" secondItem="yjD-9v-dDf" secondAttribute="top" id="ZxD-Fw-bYA"/>
                                                                             </constraints>

@@ -7,8 +7,12 @@
 
 import UIKit
 
-class FundtransCtrl: UIViewController {
-
+class FundtransCtrl: UIViewController, OptionButtonsDelegate {
+    func closeFriendsTapped(at index: IndexPath) {
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "OwnAcntTransfer") as! OwnAcntTransfer
+        self.navigationController?.pushViewController(controller, animated: false)
+    }
+    
     @IBOutlet weak var btnaddpayee: UIButton!
     @IBOutlet weak var fundtranscolView: UICollectionView!
     @IBOutlet weak var btnpayee: UIButton!
@@ -81,10 +85,6 @@ extension FundtransCtrl: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == self.tblfundtranslist {
             let cell = tblfundtranslist.dequeueReusableCell(withIdentifier: "FundTransOutwardCell", for: indexPath) as! FundTransOutwardCell
@@ -96,6 +96,8 @@ extension FundtransCtrl: UITableViewDelegate, UITableViewDataSource {
             return cell
         } else if tableView == self.fundTranstopTableView {
             let cell = fundTranstopTableView.dequeueReusableCell(withIdentifier: "FundTransTopCell", for: indexPath) as! FundTransTopCell
+            cell.delegate = self
+            cell.indexPath = indexPath
             return cell
         } else {
             return UITableViewCell()

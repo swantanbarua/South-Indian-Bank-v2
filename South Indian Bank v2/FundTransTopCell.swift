@@ -7,8 +7,15 @@
 
 import UIKit
 
+protocol OptionButtonsDelegate{
+    func closeFriendsTapped(at index:IndexPath)
+}
+
 class FundTransTopCell: UITableViewCell {
 
+    var delegate:OptionButtonsDelegate!
+    var indexPath:IndexPath!
+    
     @IBOutlet weak var btninstant: UIButton!
     @IBOutlet weak var btnownactrf: UIButton!
     @IBOutlet weak var btnoutwardClick: UIButton!
@@ -36,7 +43,6 @@ class FundTransTopCell: UITableViewCell {
     }
     
     @IBAction func ownAccount(_ sender: UIButton) {
-        let controller = UIApplication.topViewController()?.storyboard?.instantiateViewController(withIdentifier: "OwnAcntTransfer") as! OwnAcntTransfer
-        UIApplication.topViewController()?.navigationController?.present(controller, animated: false)
+        self.delegate?.closeFriendsTapped(at: indexPath)
     }
 }

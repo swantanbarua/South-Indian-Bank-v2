@@ -10,10 +10,10 @@ import UIKit
 class MiniStatementTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imgProfile: UIImageView!
-    @IBOutlet weak var lblname: UILabel!
-    @IBOutlet weak var bankname: UILabel!
-    @IBOutlet weak var actnum: UILabel!
-    @IBOutlet weak var fullname: UILabel!
+    @IBOutlet weak var dates: UILabel!
+    @IBOutlet weak var details: UILabel!
+    @IBOutlet weak var signs: UILabel!
+    @IBOutlet weak var amounts: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

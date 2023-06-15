@@ -36,7 +36,10 @@ extension MiniStatementCtrl: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = miniStatementTableView.dequeueReusableCell(withIdentifier: "MiniStatementTableViewCell", for: indexPath) as! MiniStatementTableViewCell
-        
+        cell.dates.text = miniStatementDates[indexPath.row]
+        cell.details.text = miniStatementDetails[indexPath.row]
+        cell.signs.text = miniStatementSigns[indexPath.row]
+        cell.amounts.text = "₹ \(miniStatementAmounts[indexPath.row])"
         return cell
     }
 }

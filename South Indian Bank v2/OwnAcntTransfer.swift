@@ -12,4 +12,8 @@ class OwnAcntTransfer: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        dismiss(animated: false)
+    }
 }

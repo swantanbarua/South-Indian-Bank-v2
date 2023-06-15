@@ -34,4 +34,9 @@ class FundTransTopCell: UITableViewCell {
         btnlimitenhanceClick.layer.borderWidth = 0.3
         btnlimitenhanceClick.layer.borderColor = .init(red: 1.0, green: 0, blue: 0, alpha: 1)
     }
+    
+    @IBAction func ownAccount(_ sender: UIButton) {
+        let controller = UIApplication.topViewController()?.storyboard?.instantiateViewController(withIdentifier: "OwnAcntTransfer") as! OwnAcntTransfer
+        UIApplication.topViewController()?.navigationController?.present(controller, animated: false)
+    }
 }

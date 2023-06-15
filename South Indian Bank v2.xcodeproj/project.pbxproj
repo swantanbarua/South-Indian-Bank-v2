@@ -24,6 +24,8 @@
 		11DCB21B2A39C8800044F162 /* FundtranscolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB21A2A39C8800044F162 /* FundtranscolViewCell.swift */; };
 		11DCB21E2A39D9000044F162 /* FundTransOutwardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB21C2A39D9000044F162 /* FundTransOutwardCell.swift */; };
 		11DCB21F2A39D9000044F162 /* FundTransOutwardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DCB21D2A39D9000044F162 /* FundTransOutwardCell.xib */; };
+		11DCB2262A39EF9D0044F162 /* FundTransTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB2242A39EF9D0044F162 /* FundTransTopCell.swift */; };
+		11DCB2272A39EF9D0044F162 /* FundTransTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DCB2252A39EF9D0044F162 /* FundTransTopCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		11DCB21A2A39C8800044F162 /* FundtranscolViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundtranscolViewCell.swift; sourceTree = "<group>"; };
 		11DCB21C2A39D9000044F162 /* FundTransOutwardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundTransOutwardCell.swift; sourceTree = "<group>"; };
 		11DCB21D2A39D9000044F162 /* FundTransOutwardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundTransOutwardCell.xib; sourceTree = "<group>"; };
+		11DCB2242A39EF9D0044F162 /* FundTransTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundTransTopCell.swift; sourceTree = "<group>"; };
+		11DCB2252A39EF9D0044F162 /* FundTransTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundTransTopCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				11DCB15D2A32E5370044F162 /* SceneDelegate.swift */,
 				11DCB15F2A32E5370044F162 /* ViewController.swift */,
 				11DCB1612A32E5370044F162 /* Main.storyboard */,
+				11DCB2242A39EF9D0044F162 /* FundTransTopCell.swift */,
+				11DCB2252A39EF9D0044F162 /* FundTransTopCell.xib */,
 				11DCB21C2A39D9000044F162 /* FundTransOutwardCell.swift */,
 				11DCB21D2A39D9000044F162 /* FundTransOutwardCell.xib */,
 				11DCB2182A39A23A0044F162 /* FundtransCtrl.swift */,
@@ -163,6 +169,7 @@
 				11DCB21F2A39D9000044F162 /* FundTransOutwardCell.xib in Resources */,
 				11DCB1652A32E5390044F162 /* Assets.xcassets in Resources */,
 				11DCB1632A32E5370044F162 /* Main.storyboard in Resources */,
+				11DCB2272A39EF9D0044F162 /* FundTransTopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +182,7 @@
 			files = (
 				11DCB2192A39A23A0044F162 /* FundtransCtrl.swift in Sources */,
 				11DCB1602A32E5370044F162 /* ViewController.swift in Sources */,
+				11DCB2262A39EF9D0044F162 /* FundTransTopCell.swift in Sources */,
 				11DCB15C2A32E5370044F162 /* AppDelegate.swift in Sources */,
 				11DCB15E2A32E5370044F162 /* SceneDelegate.swift in Sources */,
 				11DCB21E2A39D9000044F162 /* FundTransOutwardCell.swift in Sources */,

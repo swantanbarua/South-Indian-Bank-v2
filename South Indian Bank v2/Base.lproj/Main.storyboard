@@ -128,7 +128,7 @@
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BEb-7Q-FaG">
                                                         <rect key="frame" x="8" y="8" width="350" height="124"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h9k-KZ-9QN">
                                                             <size key="itemSize" width="348" height="124"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -145,13 +145,14 @@
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31D-Hf-uVX" userLabel="Left View">
                                                                             <rect key="frame" x="0.0" y="0.0" width="243.5" height="124"/>
-                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </view>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjD-9v-dDf" userLabel="Right View">
                                                                             <rect key="frame" x="243.5" y="0.0" width="104.5" height="124"/>
-                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </view>
                                                                     </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
                                                                         <constraint firstItem="yjD-9v-dDf" firstAttribute="leading" secondItem="31D-Hf-uVX" secondAttribute="trailing" id="Dkc-Ed-2j5"/>
                                                                         <constraint firstAttribute="trailing" secondItem="yjD-9v-dDf" secondAttribute="trailing" id="Egy-9F-ojw"/>
@@ -163,12 +164,13 @@
                                                                         <constraint firstItem="yjD-9v-dDf" firstAttribute="top" secondItem="sCX-Xu-6bR" secondAttribute="top" id="uUo-Uz-gsL"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <size key="customSize" width="348" height="124"/>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstItem="BEb-7Q-FaG" firstAttribute="leading" secondItem="JgU-es-hrk" secondAttribute="leading" constant="8" id="Leq-OQ-Bvg"/>
                                                     <constraint firstAttribute="bottom" secondItem="BEb-7Q-FaG" secondAttribute="bottom" constant="8" id="UtD-pv-YPF"/>
@@ -217,7 +219,47 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4m-88-8pb" userLabel="Recent Payees View">
                                                         <rect key="frame" x="8" y="8" width="186.5" height="83"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3Y-al-PJu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="83"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nNj-7l-iWL">
+                                                                <rect key="frame" x="8" y="9.5" width="37.5" height="64.5"/>
+                                                                <color key="tintColor" red="1" green="0.29381940280000002" blue="0.28488833029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payees and Schedules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwP-95-eRf">
+                                                                <rect key="frame" x="53.5" y="8" width="125" height="41.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Payees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQb-px-6zz">
+                                                                <rect key="frame" x="53.5" y="53.5" width="125" height="21.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="kwP-95-eRf" firstAttribute="height" secondItem="J4m-88-8pb" secondAttribute="height" multiplier="0.5" id="AEX-4l-z2z"/>
+                                                            <constraint firstItem="Q3Y-al-PJu" firstAttribute="top" secondItem="J4m-88-8pb" secondAttribute="top" id="TOl-60-vLW"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Q3Y-al-PJu" secondAttribute="bottom" id="W0b-Y9-Kwt"/>
+                                                            <constraint firstAttribute="trailing" secondItem="sQb-px-6zz" secondAttribute="trailing" constant="8" id="XVS-en-gmE"/>
+                                                            <constraint firstItem="sQb-px-6zz" firstAttribute="top" secondItem="kwP-95-eRf" secondAttribute="bottom" constant="4" id="bd4-0e-c4Y"/>
+                                                            <constraint firstItem="kwP-95-eRf" firstAttribute="top" secondItem="J4m-88-8pb" secondAttribute="top" constant="8" id="bq4-70-Nno"/>
+                                                            <constraint firstItem="nNj-7l-iWL" firstAttribute="top" secondItem="J4m-88-8pb" secondAttribute="top" constant="8" id="cEY-8Q-rzn"/>
+                                                            <constraint firstItem="nNj-7l-iWL" firstAttribute="width" secondItem="J4m-88-8pb" secondAttribute="width" multiplier="0.2" id="dQK-UJ-ePI"/>
+                                                            <constraint firstAttribute="bottom" secondItem="nNj-7l-iWL" secondAttribute="bottom" constant="8" id="iqM-W4-zN0"/>
+                                                            <constraint firstItem="nNj-7l-iWL" firstAttribute="leading" secondItem="J4m-88-8pb" secondAttribute="leading" constant="8" id="pfU-ob-zMo"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Q3Y-al-PJu" secondAttribute="trailing" id="rEo-31-0rW"/>
+                                                            <constraint firstItem="sQb-px-6zz" firstAttribute="leading" secondItem="nNj-7l-iWL" secondAttribute="trailing" constant="8" id="rmf-Jr-HR2"/>
+                                                            <constraint firstItem="kwP-95-eRf" firstAttribute="leading" secondItem="nNj-7l-iWL" secondAttribute="trailing" constant="8" id="sZb-6Q-0Rn"/>
+                                                            <constraint firstItem="Q3Y-al-PJu" firstAttribute="leading" secondItem="J4m-88-8pb" secondAttribute="leading" id="yjb-nQ-8YO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="kwP-95-eRf" secondAttribute="trailing" constant="8" id="z8F-M9-5nr"/>
+                                                            <constraint firstAttribute="bottom" secondItem="sQb-px-6zz" secondAttribute="bottom" constant="8" id="zxR-R5-KZf"/>
+                                                        </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhL-cb-Bx7" userLabel="Search and Add Payee View">
                                                         <rect key="frame" x="202.5" y="8" width="203.5" height="83"/>
@@ -313,7 +355,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Fund Transfer" image="Fund Transfer" id="A7z-xb-Ebb"/>
                     <connections>
-                        <outlet property="btnPayee" destination="tcA-05-5Cc" id="1bj-cl-BHb"/>
+                        <outlet property="btnaddpayee" destination="tcA-05-5Cc" id="RDZ-fj-XTT"/>
+                        <outlet property="btnpayee" destination="Q3Y-al-PJu" id="npC-kw-Tfj"/>
+                        <outlet property="fundTranstopTableView" destination="yZE-00-K6V" id="tpo-x6-h3W"/>
                         <outlet property="fundtranscolView" destination="BEb-7Q-FaG" id="fJJ-o9-TpA"/>
                         <outlet property="tblfundtranslist" destination="3iG-gK-Rog" id="Jm9-mh-DbX"/>
                     </connections>
@@ -2365,6 +2409,7 @@
         <image name="ic_search" width="418" height="418"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="menucard" catalog="system" width="108" height="128"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

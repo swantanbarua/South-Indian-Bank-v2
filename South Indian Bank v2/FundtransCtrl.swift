@@ -9,24 +9,32 @@ import UIKit
 
 class FundtransCtrl: UIViewController {
 
-    @IBOutlet weak var btnPayee: UIButton!
+    @IBOutlet weak var btnaddpayee: UIButton!
     @IBOutlet weak var fundtranscolView: UICollectionView!
+    @IBOutlet weak var btnpayee: UIButton!
     @IBOutlet weak var tblfundtranslist: UITableView!
+    @IBOutlet weak var fundTranstopTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fundtranscolView.delegate = self
         fundtranscolView.dataSource = self
         tblfundtranslist.register(UINib(nibName: "FundTransOutwardCell", bundle: nil), forCellReuseIdentifier: "FundTransOutwardCell")
+        fundTranstopTableView.register(UINib(nibName: "FundTransTopCell", bundle: nil), forCellReuseIdentifier: "FundTransTopCell")
         tblfundtranslist.delegate = self
         tblfundtranslist.dataSource = self
+        fundTranstopTableView.delegate = self
+        fundTranstopTableView.dataSource = self
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        btnPayee.layer.cornerRadius = 20
-        btnPayee.layer.borderWidth = 0.5
-        btnPayee.layer.borderColor = .init(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)
+        btnaddpayee.layer.cornerRadius = 20
+        btnaddpayee.layer.borderWidth = 0.5
+        btnaddpayee.layer.borderColor = .init(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)
+        btnpayee.layer.cornerRadius = 10
+        btnpayee.layer.borderWidth = 0.5
+        btnpayee.layer.borderColor = .init(gray: 255/255, alpha: 1)
     }
 }
 
@@ -43,20 +51,35 @@ extension FundtransCtrl: UICollectionViewDelegate, UICollectionViewDataSource {
 
 extension FundtransCtrl: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return usernames.count
+        if tableView == self.tblfundtranslist {
+            return usernames.count
+        } else {
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        if tableView == self.tblfundtranslist {
+            return 80
+        } else {
+            return 200
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tblfundtranslist.dequeueReusableCell(withIdentifier: "FundTransOutwardCell", for: indexPath) as! FundTransOutwardCell
-        cell.accessoryType = .none
-        cell.lblacno.text = "\(accountNumbers[indexPath.row])"
-        cell.lblacname.text = accountHolderNames[indexPath.row]
-        cell.lblbankname.text = bankNames[indexPath.row]
-        cell.lblusrname.text = usernames[indexPath.row]
-        return cell
+        if tableView == self.tblfundtranslist {
+            let cell = tblfundtranslist.dequeueReusableCell(withIdentifier: "FundTransOutwardCell", for: indexPath) as! FundTransOutwardCell
+            cell.accessoryType = .none
+            cell.lblacno.text = "\(accountNumbers[indexPath.row])"
+            cell.lblacname.text = accountHolderNames[indexPath.row]
+            cell.lblbankname.text = bankNames[indexPath.row]
+            cell.lblusrname.text = usernames[indexPath.row]
+            return cell
+        } else if tableView == self.fundTranstopTableView {
+            let cell = fundTranstopTableView.dequeueReusableCell(withIdentifier: "FundTransTopCell", for: indexPath) as! FundTransTopCell
+            return cell
+        } else {
+            return UITableViewCell()
+        }
     }
 }

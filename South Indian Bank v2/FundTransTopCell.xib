@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="147" id="KGk-i7-Jjw" customClass="FundTransTopCell" customModule="South_Indian_Bank_v2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J73-lY-aOa">
+                        <rect key="frame" x="8" y="8" width="336" height="131"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UiJ-me-I4c">
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="60.666666666666664"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bM-eP-wJB" userLabel="trnfinstview">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="60.666666666666664"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLG-OK-UgO">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="60.666666666666664"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Remit Money Abroad" translatesAutoresizingMaskIntoConstraints="NO" id="0ls-0H-VfR">
+                                                <rect key="frame" x="8" y="8" width="40.666666666666664" height="44.666666666666664"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfer Instantly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuE-ct-c22">
+                                                <rect key="frame" x="56.666666666666679" y="8" width="98.333333333333314" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="1" green="0.29381940280000002" blue="0.28488833029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(New Beneficiary)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s71-sS-sLg">
+                                                <rect key="frame" x="56.666666666666679" y="34" width="98.333333333333314" height="18.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="1" green="0.29381940280000002" blue="0.28488833029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="tuE-ct-c22" firstAttribute="leading" secondItem="0ls-0H-VfR" secondAttribute="trailing" constant="8" id="0A7-GJ-PMS"/>
+                                            <constraint firstAttribute="bottom" secondItem="s71-sS-sLg" secondAttribute="bottom" constant="8" id="BB7-Zz-TcK"/>
+                                            <constraint firstItem="MLG-OK-UgO" firstAttribute="top" secondItem="2bM-eP-wJB" secondAttribute="top" id="K8C-Dv-lT8"/>
+                                            <constraint firstItem="0ls-0H-VfR" firstAttribute="width" secondItem="2bM-eP-wJB" secondAttribute="width" multiplier="0.25" id="Xp1-ib-fnB"/>
+                                            <constraint firstItem="0ls-0H-VfR" firstAttribute="leading" secondItem="2bM-eP-wJB" secondAttribute="leading" constant="8" id="Yq0-lZ-icl"/>
+                                            <constraint firstAttribute="trailing" secondItem="s71-sS-sLg" secondAttribute="trailing" constant="8" id="a8Y-TA-Dim"/>
+                                            <constraint firstAttribute="bottom" secondItem="0ls-0H-VfR" secondAttribute="bottom" constant="8" id="gFH-26-5mB"/>
+                                            <constraint firstAttribute="trailing" secondItem="MLG-OK-UgO" secondAttribute="trailing" id="iJH-Oe-wfb"/>
+                                            <constraint firstItem="tuE-ct-c22" firstAttribute="top" secondItem="2bM-eP-wJB" secondAttribute="top" constant="8" id="iZN-gg-jW7"/>
+                                            <constraint firstAttribute="bottom" secondItem="MLG-OK-UgO" secondAttribute="bottom" id="mpd-DW-HOb"/>
+                                            <constraint firstItem="s71-sS-sLg" firstAttribute="leading" secondItem="0ls-0H-VfR" secondAttribute="trailing" constant="8" id="oCr-wf-BRK"/>
+                                            <constraint firstAttribute="trailing" secondItem="tuE-ct-c22" secondAttribute="trailing" constant="8" id="slL-yr-Mbg"/>
+                                            <constraint firstItem="s71-sS-sLg" firstAttribute="top" secondItem="tuE-ct-c22" secondAttribute="bottom" constant="8" id="snx-23-w5W"/>
+                                            <constraint firstItem="0ls-0H-VfR" firstAttribute="top" secondItem="2bM-eP-wJB" secondAttribute="top" constant="8" id="u6b-Rf-GgX"/>
+                                            <constraint firstItem="tuE-ct-c22" firstAttribute="height" secondItem="2bM-eP-wJB" secondAttribute="height" multiplier="0.3" id="vLf-O4-3aS"/>
+                                            <constraint firstItem="MLG-OK-UgO" firstAttribute="leading" secondItem="2bM-eP-wJB" secondAttribute="leading" id="yCw-SQ-NFt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9h-Nl-4Bc" userLabel="My SIB Account View">
+                                        <rect key="frame" x="173" y="0.0" width="163" height="60.666666666666664"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R7-Cn-Ebp">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="60.666666666666664"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Accounts" translatesAutoresizingMaskIntoConstraints="NO" id="Yj3-Ve-WnN">
+                                                <rect key="frame" x="8" y="8" width="40.666666666666664" height="44.666666666666664"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My SIB Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfC-TR-wXE">
+                                                <rect key="frame" x="56.66666666666665" y="8" width="98.333333333333314" height="44.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Yj3-Ve-WnN" firstAttribute="leading" secondItem="k9h-Nl-4Bc" secondAttribute="leading" constant="8" id="10C-LP-cEh"/>
+                                            <constraint firstItem="Yj3-Ve-WnN" firstAttribute="top" secondItem="k9h-Nl-4Bc" secondAttribute="top" constant="8" id="7A5-iy-5A5"/>
+                                            <constraint firstAttribute="trailing" secondItem="OfC-TR-wXE" secondAttribute="trailing" constant="8" id="Cd1-F6-j3j"/>
+                                            <constraint firstItem="OfC-TR-wXE" firstAttribute="leading" secondItem="Yj3-Ve-WnN" secondAttribute="trailing" constant="8" id="Raj-0z-ELW"/>
+                                            <constraint firstItem="Yj3-Ve-WnN" firstAttribute="width" secondItem="k9h-Nl-4Bc" secondAttribute="width" multiplier="0.25" id="Rjk-Hv-Neb"/>
+                                            <constraint firstAttribute="trailing" secondItem="3R7-Cn-Ebp" secondAttribute="trailing" id="Zfx-zY-GjN"/>
+                                            <constraint firstAttribute="bottom" secondItem="3R7-Cn-Ebp" secondAttribute="bottom" id="e2y-iw-SNz"/>
+                                            <constraint firstAttribute="bottom" secondItem="OfC-TR-wXE" secondAttribute="bottom" constant="8" id="ing-sQ-NsH"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yj3-Ve-WnN" secondAttribute="bottom" constant="8" id="kPe-MS-G4z"/>
+                                            <constraint firstItem="3R7-Cn-Ebp" firstAttribute="top" secondItem="k9h-Nl-4Bc" secondAttribute="top" id="rfs-hn-VnE"/>
+                                            <constraint firstItem="3R7-Cn-Ebp" firstAttribute="leading" secondItem="k9h-Nl-4Bc" secondAttribute="leading" id="xW6-Il-dLQ"/>
+                                            <constraint firstItem="OfC-TR-wXE" firstAttribute="top" secondItem="k9h-Nl-4Bc" secondAttribute="top" constant="8" id="ySA-qX-1ev"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H6r-Lw-gZs">
+                                <rect key="frame" x="0.0" y="70.666666666666671" width="336" height="60.333333333333329"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFA-G9-tcu" userLabel="Remit Money Abroad View">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="60.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAl-jN-q9X">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="60.333333333333336"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Remit Money Abroad" translatesAutoresizingMaskIntoConstraints="NO" id="o0c-1A-ouv">
+                                                <rect key="frame" x="8" y="8" width="40.666666666666664" height="44.333333333333336"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remit Money Abroad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBH-D3-yGG">
+                                                <rect key="frame" x="56.666666666666679" y="8" width="98.333333333333314" height="44.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <color key="textColor" red="1" green="0.29381940280000002" blue="0.28488833029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="XAl-jN-q9X" firstAttribute="top" secondItem="sFA-G9-tcu" secondAttribute="top" id="1mN-tj-pTS"/>
+                                            <constraint firstItem="o0c-1A-ouv" firstAttribute="leading" secondItem="sFA-G9-tcu" secondAttribute="leading" constant="8" id="6sw-1k-zv9"/>
+                                            <constraint firstAttribute="trailing" secondItem="XAl-jN-q9X" secondAttribute="trailing" id="9sR-mq-7Z5"/>
+                                            <constraint firstItem="XAl-jN-q9X" firstAttribute="leading" secondItem="sFA-G9-tcu" secondAttribute="leading" id="Ec1-0Y-U8k"/>
+                                            <constraint firstItem="cBH-D3-yGG" firstAttribute="leading" secondItem="o0c-1A-ouv" secondAttribute="trailing" constant="8" id="GF0-Id-ajc"/>
+                                            <constraint firstAttribute="trailing" secondItem="cBH-D3-yGG" secondAttribute="trailing" constant="8" id="GNP-Nw-Tr0"/>
+                                            <constraint firstItem="o0c-1A-ouv" firstAttribute="top" secondItem="sFA-G9-tcu" secondAttribute="top" constant="8" id="Ixh-5V-WXq"/>
+                                            <constraint firstItem="o0c-1A-ouv" firstAttribute="width" secondItem="sFA-G9-tcu" secondAttribute="width" multiplier="0.25" id="bKX-95-Mqf"/>
+                                            <constraint firstAttribute="bottom" secondItem="cBH-D3-yGG" secondAttribute="bottom" constant="8" id="ot5-sB-jar"/>
+                                            <constraint firstAttribute="bottom" secondItem="o0c-1A-ouv" secondAttribute="bottom" constant="8" id="oxx-sX-gca"/>
+                                            <constraint firstItem="cBH-D3-yGG" firstAttribute="top" secondItem="sFA-G9-tcu" secondAttribute="top" constant="8" id="vBT-G8-JTo"/>
+                                            <constraint firstAttribute="bottom" secondItem="XAl-jN-q9X" secondAttribute="bottom" id="wXD-ik-Qst"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgY-gv-YBC" userLabel="Transaction Limit Enhancement View">
+                                        <rect key="frame" x="173" y="0.0" width="163" height="60.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfh-uT-H7p">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="60.333333333333336"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Transaction Limit Enhancement" translatesAutoresizingMaskIntoConstraints="NO" id="6fS-PT-PvB">
+                                                <rect key="frame" x="8" y="8" width="40.666666666666664" height="44.333333333333336"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Limit Enhancement" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFz-Bc-6CG">
+                                                <rect key="frame" x="56.66666666666665" y="8" width="98.333333333333314" height="44.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="1" green="0.29381940280000002" blue="0.28488833029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Rfh-uT-H7p" firstAttribute="top" secondItem="rgY-gv-YBC" secondAttribute="top" id="0Ym-si-FoZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="QFz-Bc-6CG" secondAttribute="trailing" constant="8" id="FH4-Mg-2D9"/>
+                                            <constraint firstAttribute="bottom" secondItem="6fS-PT-PvB" secondAttribute="bottom" constant="8" id="GuO-D5-ecW"/>
+                                            <constraint firstItem="6fS-PT-PvB" firstAttribute="top" secondItem="rgY-gv-YBC" secondAttribute="top" constant="8" id="N7I-hx-ZBU"/>
+                                            <constraint firstItem="QFz-Bc-6CG" firstAttribute="top" secondItem="rgY-gv-YBC" secondAttribute="top" constant="8" id="Sa5-ZP-end"/>
+                                            <constraint firstItem="6fS-PT-PvB" firstAttribute="leading" secondItem="rgY-gv-YBC" secondAttribute="leading" constant="8" id="SeU-mP-J4G"/>
+                                            <constraint firstItem="Rfh-uT-H7p" firstAttribute="leading" secondItem="rgY-gv-YBC" secondAttribute="leading" id="aBV-Cb-NmU"/>
+                                            <constraint firstItem="6fS-PT-PvB" firstAttribute="width" secondItem="rgY-gv-YBC" secondAttribute="width" multiplier="0.25" id="fSX-j6-YgM"/>
+                                            <constraint firstItem="QFz-Bc-6CG" firstAttribute="leading" secondItem="6fS-PT-PvB" secondAttribute="trailing" constant="8" id="hJW-Gf-iCw"/>
+                                            <constraint firstAttribute="bottom" secondItem="QFz-Bc-6CG" secondAttribute="bottom" constant="8" id="m4a-TH-2zb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rfh-uT-H7p" secondAttribute="trailing" id="sYc-H2-khY"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rfh-uT-H7p" secondAttribute="bottom" id="x4I-xH-ag0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J73-lY-aOa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="L1K-UB-l11"/>
+                    <constraint firstItem="J73-lY-aOa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="exL-LT-OdH"/>
+                    <constraint firstAttribute="trailing" secondItem="J73-lY-aOa" secondAttribute="trailing" constant="8" id="lNM-Ox-bpP"/>
+                    <constraint firstAttribute="bottom" secondItem="J73-lY-aOa" secondAttribute="bottom" constant="8" id="pBg-Ah-Mnd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btninstant" destination="MLG-OK-UgO" id="0B0-8O-xar"/>
+                <outlet property="btnlimitenhanceClick" destination="Rfh-uT-H7p" id="jQL-WT-AhT"/>
+                <outlet property="btnoutwardClick" destination="XAl-jN-q9X" id="o3M-0P-QyY"/>
+                <outlet property="btnownactrf" destination="3R7-Cn-Ebp" id="4nX-P2-1sr"/>
+            </connections>
+            <point key="canvasLocation" x="137.40458015267174" y="55.985915492957751"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Accounts" width="36" height="36"/>
+        <image name="Remit Money Abroad" width="24" height="24"/>
+        <image name="Transaction Limit Enhancement" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

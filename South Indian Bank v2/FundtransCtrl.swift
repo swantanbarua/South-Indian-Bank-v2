@@ -99,7 +99,7 @@ extension FundtransCtrl: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == self.tblfundtranslist {
             let cell = tblfundtranslist.dequeueReusableCell(withIdentifier: "FundTransOutwardCell", for: indexPath) as! FundTransOutwardCell
-            cell.accessoryType = .none
+            cell.selectionStyle = .none
             cell.lblacno.text = "\(accountNumbers[indexPath.row])"
             cell.lblacname.text = accountHolderNames[indexPath.row]
             cell.lblbankname.text = bankNames[indexPath.row]

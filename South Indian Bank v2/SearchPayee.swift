@@ -60,6 +60,8 @@ class SearchPayee: UIViewController, UITextFieldDelegate {
                             }
                         }
                     }
+                } else {
+                    searchNames = []
                 }
             }
             
@@ -74,6 +76,10 @@ class SearchPayee: UIViewController, UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
     }
+    
+//    func textFieldDidChangeSelection(_ textField: UITextField) {
+//        tblfundtranslist.reloadData()
+//    }
 }
 
 extension SearchPayee: UITableViewDelegate, UITableViewDataSource {
@@ -87,16 +93,16 @@ extension SearchPayee: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblfundtranslist.dequeueReusableCell(withIdentifier: "FundTransOutwardCell", for: indexPath) as! FundTransOutwardCell
-        cell.accessoryType = .none
+        cell.selectionStyle = .none
         
-        cell.lblacno.text = searchNames.count == 0 ? "\(accountNumbers[indexPath.row])" : "\(filteredAccountNumbers[indexPath.row])"
+        cell.lblacname.text = searchNames[indexPath.row]
         
-        cell.lblacname.text = searchNames.count == 0 ? accountHolderNames[indexPath.row] : searchNames[indexPath.row]
+        cell.lblacno.text = "\(filteredAccountNumbers[indexPath.row])"
         
-        cell.lblbankname.text = searchNames.count == 0 ? bankNames[indexPath.row] : filteredBanknames[indexPath.row]
+        cell.lblbankname.text = filteredBanknames[indexPath.row]
         
-        cell.lblusrname.text = searchNames.count == 0 ? usernames[indexPath.row] : filteredUsernames[indexPath.row]
-        
+        cell.lblusrname.text = filteredUsernames[indexPath.row]
+
         return cell
     }
 }

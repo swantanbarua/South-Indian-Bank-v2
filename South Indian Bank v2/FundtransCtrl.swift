@@ -45,6 +45,17 @@ class FundtransCtrl: UIViewController, OptionButtonsDelegate {
         btnpayee.layer.borderWidth = 0.5
         btnpayee.layer.borderColor = .init(gray: 255/255, alpha: 1)
     }
+    
+    @IBAction func searchPayee(_ sender: UIButton) {
+        if let vc = UIApplication.topViewController()?.navigationController?.storyboard?.instantiateViewController(withIdentifier: "SearchPayee") as? SearchPayee {
+            if let sheet = vc.sheetPresentationController {
+                sheet.detents = [.large()]
+                sheet.largestUndimmedDetentIdentifier = .large
+            }
+            
+            UIApplication.topViewController()?.navigationController?.present(vc, animated: true)
+        }
+    }
 }
 
 extension FundtransCtrl: UICollectionViewDelegate, UICollectionViewDataSource {

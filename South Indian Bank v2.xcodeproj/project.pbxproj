@@ -27,6 +27,7 @@
 		11DCB2262A39EF9D0044F162 /* FundTransTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB2242A39EF9D0044F162 /* FundTransTopCell.swift */; };
 		11DCB2272A39EF9D0044F162 /* FundTransTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DCB2252A39EF9D0044F162 /* FundTransTopCell.xib */; };
 		11DCB2492A3B28620044F162 /* OwnAcntTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB2482A3B28620044F162 /* OwnAcntTransfer.swift */; };
+		11DCB26D2A3C5FE60044F162 /* SearchPayee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB26C2A3C5FE60044F162 /* SearchPayee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		11DCB2242A39EF9D0044F162 /* FundTransTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundTransTopCell.swift; sourceTree = "<group>"; };
 		11DCB2252A39EF9D0044F162 /* FundTransTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundTransTopCell.xib; sourceTree = "<group>"; };
 		11DCB2482A3B28620044F162 /* OwnAcntTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnAcntTransfer.swift; sourceTree = "<group>"; };
+		11DCB26C2A3C5FE60044F162 /* SearchPayee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPayee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		11DCB15A2A32E5370044F162 /* South Indian Bank v2 */ = {
 			isa = PBXGroup;
 			children = (
+				11DCB26C2A3C5FE60044F162 /* SearchPayee.swift */,
 				11DCB15B2A32E5370044F162 /* AppDelegate.swift */,
 				11DCB15D2A32E5370044F162 /* SceneDelegate.swift */,
 				11DCB15F2A32E5370044F162 /* ViewController.swift */,
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DCB26D2A3C5FE60044F162 /* SearchPayee.swift in Sources */,
 				11DCB2192A39A23A0044F162 /* FundtransCtrl.swift in Sources */,
 				11DCB1602A32E5370044F162 /* ViewController.swift in Sources */,
 				11DCB2262A39EF9D0044F162 /* FundTransTopCell.swift in Sources */,

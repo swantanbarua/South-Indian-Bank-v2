@@ -2754,6 +2754,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="278.5" height="89.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="searchPayee:" destination="J4M-Jy-nKM" eventType="editingChanged" id="y5d-Yp-ubK"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAK-OM-mIe">
                                         <rect key="frame" x="286.5" y="8" width="103.5" height="73.5"/>
@@ -2798,6 +2801,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Nae-Q3-GlJ"/>
                     <connections>
+                        <outlet property="serachctrlbar" destination="Nv0-Q9-zwa" id="Kkt-3F-qHD"/>
                         <outlet property="tblfundtranslist" destination="J0Q-lU-ilj" id="OUm-pb-3fo"/>
                     </connections>
                 </viewController>
